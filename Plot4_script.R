@@ -13,7 +13,7 @@ with(powercons,  {plot(Time,  Global_active_power, type="l", xlab= "", ylab="Glo
                  plot(Time,  Sub_metering_1, col="black", type="l", xlab= "", ylab="Energy sub metering")
                  lines(Time,  Sub_metering_2, col="red")
                  lines(Time,  Sub_metering_3, col="blue")
-                 legend("topright", lty = 1, col=c("black", "red", "blue"), legend=colnames(powercons)[6:8])
+                 legend("topright", lty = 1, col=c("black", "red", "blue"), legend=colnames(powercons)[6:8], bty="n")
                  
                  plot(Time,  Global_reactive_power, type="l", xlab= "", ylab="Global Reactive Power (kVAr)")
                  
